@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <title>Weather App</title>
 </head>
 <body>
-    <input id="search" type="text" placeholder="Texas,USA">
-    <input id="submit" type="submit" name="submit" onclick="Submit()">
-    <h1 id="temperature"></h1>
-    <button id="change" type="submit">Convert to °F</button>
-    <h1 id="city"></h1>
-    <h3 id="description"></h3>
-    <h3 id="wind-speed"></h3>
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="search-area">
+        <input class="search" id="search" type="text" placeholder="Texas">
+        <button class="reload" id="reload" onclick="reload()">Press Me</button>
+        <input class="submit" id="submit" type="submit" name="submit" onclick="Submit()" value="Now, Press Me">
+        </div>
+        <h1 class="city" id="city"></h1>
+        <div class="weather-main">
+        <h1 class="temperature" id="temperature"></h1>
+        <button class="temperature" id="change" type="submit">Convert to °F</button>
+        </div>
+        <div class="description-area">
+            <h3>Description:</h3>
+            <h3 class="description" id="description"></h3>
+        </div>
+        <div class="wind-area">
+            <h3>Wind Speed:</h3>
+            <h3 class="wind-speed" id="wind-speed"></h3>
+        </div>    
+        <script src="script.js"></script>
+    </div>
 </body>
 </html>

@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: royalblue;
+    padding: 20px;
+    width: 450px;
+    height: 325px;
+}
+
+.search-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.city {
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.search {
+    height: 40px;
+    width: 200px;
+}
+
+.reload {
+    width: 150px;
+}
+
+.weather-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.temperature {
+    margin-top: 0;
+    height: 40px;
+}
+
+.description-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wind-area {
+    display: flex;
+    justify-content: space-between;
+}
