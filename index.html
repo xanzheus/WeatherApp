@@ -8,16 +8,22 @@
     <title>Weather App</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="search-area">
-        <input class="search" id="search" type="text" placeholder="Texas">
-        <button class="reload" id="reload" onclick="reload()">Press Me</button>
-        <input class="submit" id="submit" type="submit" name="submit" onclick="Submit()" value="Now, Press Me">
+            <input class="search" id="search" type="text" placeholder="Texas">
+            <button class="reload" id="reload" onclick="reload()">Calculate</button>
+            <input class="submit" id="submit" type="submit" name="submit" onclick="Submit()" value="Show Results">
         </div>
-        <h1 class="city" id="city"></h1>
+        <div class="city-div">
+            <h1 class="city" id="city"></h1>
+        </div>
+        <div class="icon-div">
+            <h1 id="main" class="main"></h1>
+            <img class="icon" id="icon">
+        </div>
         <div class="weather-main">
-        <h1 class="temperature" id="temperature"></h1>
-        <button class="temperature" id="change" type="submit">Convert to °F</button>
+            <h1 class="temperature" id="temperature"></h1>
+            <button class="temperature" id="change" type="submit">Convert</button>
         </div>
         <div class="description-area">
             <h3>Description:</h3>
@@ -26,8 +32,12 @@
         <div class="wind-area">
             <h3>Wind Speed:</h3>
             <h3 class="wind-speed" id="wind-speed"></h3>
-        </div>    
+        </div>   
+        <div class="humidity-area">
+            <h3>Humidity:</h3>
+            <h3 class="humidity" id="humidity"></h3>
+        </div>  
+    </div> 
         <script src="script.js"></script>
-    </div>
 </body>
 </html>

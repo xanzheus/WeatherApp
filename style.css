@@ -6,7 +6,35 @@
     background-color: royalblue;
     padding: 20px;
     width: 450px;
-    height: 325px;
+    height: 390px;
+}
+
+.v1 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.humidity-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
 }
 
 .search-area {
