@@ -37,7 +37,7 @@ function Submit() {
      })
      if (response.weather[0].description == "clear sky") {
         let v1 = document.createElement('VIDEO');
-        v1.setAttribute("src", "Clouds_Timelapse_66___30s___4k_res.mp4");
+        v1.setAttribute("src", "Clouds_Timelapse_31___60s___4k_res.mp4");
         v1.setAttribute("class", "v1")
         document.body.appendChild(v1)
         v1.autoplay = true;
@@ -49,13 +49,83 @@ function Submit() {
          document.body.appendChild(v1)
          v1.autoplay = true;
          v1.load();
-     } else if (response.weather[0].description == "few clouds") {
+     } else if (response.weather[0].description == "scattered clouds") {
          let v1 = document.createElement('VIDEO');
-         v1.setAttribute("src", "Clouds_Timelapse_66___30s___4k_res.mp4");
+         v1.setAttribute("src", "moving_clouds.mp4");
          v1.setAttribute("class", "v1")
          document.body.appendChild(v1)
          v1.autoplay = true;
          v1.load();
-  }
+      }else if (response.weather[0].description == "broken clouds") {
+         let v1 = document.createElement('VIDEO');
+         v1.setAttribute("src", "dark_clouds_timelapse.mov");
+         v1.setAttribute("class", "v1")
+         document.body.appendChild(v1)
+         v1.autoplay = true;
+         v1.load();
+      } else if (response.weather[0].description == "overcast clouds") {
+         let v1 = document.createElement('VIDEO');
+         v1.setAttribute("src", "dark_clouds_timelapse.mov");
+         v1.setAttribute("class", "v1")
+         document.body.appendChild(v1)
+         v1.autoplay = true;
+         v1.load();
+      }  else if (response.weather[0].description == "thunderstorm") {
+         let v1 = document.createElement('VIDEO');
+         v1.setAttribute("src", "New Project ‐ Made with Clipchamp (1).mp4");
+         v1.setAttribute("class", "v1")
+         document.body.appendChild(v1)
+         v1.autoplay = true;
+         v1.load();
+      } else if (response.weather[0].description == "snow") {
+         let v1 = document.createElement('VIDEO');
+         v1.setAttribute("src", "winter2.mp4");
+         v1.setAttribute("class", "v1")
+         document.body.appendChild(v1)
+         v1.autoplay = true;
+         v1.load();
+      } else if (response.weather[0].description == "haze") {
+         let v1 = document.createElement('VIDEO');
+         v1.setAttribute("src", "Pond_flyover_with_fog.mp4");
+         v1.setAttribute("class", "v1")
+         document.body.appendChild(v1)
+         v1.autoplay = true;
+         v1.load();
+      } else if (response.weather[0].description == "mist") {
+         let v1 = document.createElement('VIDEO');
+         v1.setAttribute("src", "Pond_flyover_with_fog.mp4");
+         v1.setAttribute("class", "v1")
+         document.body.appendChild(v1)
+         v1.autoplay = true;
+         v1.load();
+      } else if (response.weather[0].description == "shower rain") {
+         let v1 = document.createElement('VIDEO');
+         v1.setAttribute("src", "parking_with_rain.mov");
+         v1.setAttribute("class", "v1")
+         document.body.appendChild(v1)
+         v1.autoplay = true;
+         v1.load();
+      } else if (response.weather[0].description == "light rain") {
+         let v1 = document.createElement('VIDEO');
+         v1.setAttribute("src", "parking_with_rain.mov");
+         v1.setAttribute("class", "v1")
+         document.body.appendChild(v1)
+         v1.autoplay = true;
+         v1.load();
+      } else if (response.weather[0].description == "smoke") {
+         let v1 = document.createElement('VIDEO');
+         v1.setAttribute("src", "Pond_flyover_with_fog.mp4");
+         v1.setAttribute("class", "v1")
+         document.body.appendChild(v1)
+         v1.autoplay = true;
+         v1.load();
+      } else if (response.weather[0].description == "rain") {
+         let v1 = document.createElement('VIDEO');
+         v1.setAttribute("src", "parking_with_rain.mov");
+         v1.setAttribute("class", "v1")
+         document.body.appendChild(v1)
+         v1.autoplay = true;
+         v1.load();
+      }
   })
 };

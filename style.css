@@ -3,10 +3,14 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    background-color: royalblue;
+    background-color: rgba(43, 69, 146, 0.877);
     padding: 20px;
-    width: 450px;
-    height: 390px;
+    padding-top: 30px;
+    width: 440px;
+    height: 450px;
+    border-radius: 5%;
+    margin-top: 100px;
+    color: white;
 }
 
 .v1 {
@@ -52,7 +56,32 @@
 }
 
 .reload {
-    width: 150px;
+    width: 100px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.reload:hover {
+    background-color: white;
+    border: rgba(43, 69, 146, 0.877);
+    color: rgba(43, 69, 146, 0.877);
+}
+
+.submit {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.submit:hover {
+    background-color: white;
+    border: rgba(43, 69, 146, 0.877);
+    color: rgba(43, 69, 146, 0.877);
 }
 
 .weather-main {
@@ -61,8 +90,17 @@
 }
 
 .temperature {
-    margin-top: 0;
+    margin-top: 20px;
     height: 40px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.temperature:hover {
+    background-color: white;
+    border: rgba(43, 69, 146, 0.877);
+    color: rgba(43, 69, 146, 0.877);
 }
 
 .description-area {
