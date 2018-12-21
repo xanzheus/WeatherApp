@@ -8,10 +8,6 @@ let icon = document.getElementById("icon");
 let main = document.getElementById("main");
 let humidity = document.getElementById("humidity");
 
-function reload() {
-   location.reload();
-}
-
 function submit() {
    fetch('https://api.openweathermap.org/data/2.5/weather?q='+ document.getElementById("search").value + '&APPID=836ae263c4d8ea9e2a2657878ceaea61', {mode: 'cors'})
    .then(function(response) {

@@ -52,22 +52,7 @@
 
 .search {
     height: 40px;
-    width: 200px;
-}
-
-.reload {
-    width: 100px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.reload:hover {
-    background-color: white;
-    border: rgba(43, 69, 146, 0.877);
-    color: rgba(43, 69, 146, 0.877);
+    width: 400px;
 }
 
 .submit {
