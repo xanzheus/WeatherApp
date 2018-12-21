@@ -13,7 +13,7 @@ function reload() {
 }
 
 function submit() {
-   fetch('http://api.openweathermap.org/data/2.5/weather?q='+ search + '&APPID=836ae263c4d8ea9e2a2657878ceaea61', {mode: 'cors'})
+   fetch('https://api.openweathermap.org/data/2.5/weather?q='+ search + '&APPID=836ae263c4d8ea9e2a2657878ceaea61', {mode: 'cors'})
    .then(function(response) {
       return response.json()
    })
