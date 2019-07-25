@@ -53,6 +53,7 @@
 .search {
     height: 40px;
     width: 400px;
+    padding-left: 10px;
 }
 
 .submit {
