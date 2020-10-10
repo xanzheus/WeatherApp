@@ -1,16 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap');
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
 .container {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(43, 69, 146, 0.877);
-    padding: 20px;
-    padding-top: 30px;
+    background-color: rgba(255,255,255,1);
+		box-shadow: 0px 50px 100px rgba(19,0,0,0.120);
+		font-family: 'Commissioner', sans-serif;
+	  animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+    padding: 5vh;
     width: 440px;
     height: 450px;
-    border-radius: 5%;
     margin-top: 100px;
-    color: white;
+    color: black;
+}
+
+@media(max-width: 600px){
+	.container{
+		width: 90%;
+		padding: 2vh;
+		min-height: 100%;
+	}
+}
+
+.city{
+	text-shadow: 20px 20px rgba(0,0,0,0.3);
+	animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
 }
 
 .v1 {
@@ -41,33 +63,33 @@
     padding: 0;
 }
 
+
 .search-area {
     display: flex;
     flex-direction: row;
 }
 
-.city {
-    border-bottom: 1px solid #C0C0C0;
-}
 
 .search {
     height: 40px;
     width: 400px;
     padding-left: 10px;
+		border: 2px solid black;
 }
 
 .submit {
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid black;
+    color: black;
+		transition: all 600ms ease-in-out;
     margin-left: 5px;
     margin-right: 5px;
 }
 
 .submit:hover {
-    background-color: white;
-    border: rgba(43, 69, 146, 0.877);
-    color: rgba(43, 69, 146, 0.877);
+    background-color: black;
+    border: 2px solid black;
+    color: white;
 }
 
 .weather-main {
@@ -79,14 +101,15 @@
     margin-top: 20px;
     height: 40px;
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid black;
+	transition: all 600ms ease-in-out;
+    color:black;
 }
 
 .temperature:hover {
-    background-color: white;
-    border: rgba(43, 69, 146, 0.877);
-    color: rgba(43, 69, 146, 0.877);
+   background-color: black;
+    border: 2px solid black;
+    color: white;
 }
 
 .description-area {
@@ -98,3 +121,28 @@
     display: flex;
     justify-content: space-between;
 }
+
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(15px);
+              filter: blur(15px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(15px);
+              filter: blur(15px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
